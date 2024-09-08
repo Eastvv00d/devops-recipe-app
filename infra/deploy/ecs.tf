@@ -98,7 +98,7 @@ resource "aws_ecs_task_definition" "api" {
             sourceVolume  = "static"
           },
           {
-            readOnly      = true
+            readOnly      = false
             containerPath = "/vol/media"
             sourceVolume  = "efs-media"
           }
